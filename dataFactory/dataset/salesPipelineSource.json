@@ -1,0 +1,55 @@
+{
+	"name": "salesPipelineSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "dataman266/SalesOpprADF/main/sales_pipeline.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "opportunity_id",
+				"type": "String"
+			},
+			{
+				"name": "sales_agent",
+				"type": "String"
+			},
+			{
+				"name": "product",
+				"type": "String"
+			},
+			{
+				"name": "account",
+				"type": "String"
+			},
+			{
+				"name": "deal_stage",
+				"type": "String"
+			},
+			{
+				"name": "engage_date",
+				"type": "String"
+			},
+			{
+				"name": "close_date",
+				"type": "String"
+			},
+			{
+				"name": "close_value",
+				"type": "String"
+			}
+		]
+	}
+}
