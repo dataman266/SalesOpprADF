@@ -1,0 +1,51 @@
+{
+	"name": "accountsSource",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "HttpServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "dataman266/SalesOpprADF/main/accounts.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "account",
+				"type": "String"
+			},
+			{
+				"name": "sector",
+				"type": "String"
+			},
+			{
+				"name": "year_established",
+				"type": "String"
+			},
+			{
+				"name": "revenue",
+				"type": "String"
+			},
+			{
+				"name": "employees",
+				"type": "String"
+			},
+			{
+				"name": "office_location",
+				"type": "String"
+			},
+			{
+				"name": "subsidiary_of",
+				"type": "String"
+			}
+		]
+	}
+}
